@@ -6,7 +6,7 @@ const values = elements.map((element) => {
   const number = parseInt(element.textContent.replace(/,/g, ''), 10);
 
   if (isNaN(number)) {
-    return;
+    return 0;
   }
 
   return number;
